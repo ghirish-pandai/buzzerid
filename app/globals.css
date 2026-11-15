@@ -1,11 +1,11 @@
-@import "tailwindcss";
+﻿@import "tailwindcss";
 
 :root {
-  --bg-primary: #070C18;
-  --bg-secondary: #0E1829;
-  --bg-card: #131D2E;
-  --border: #1E2D44;
-  --accent-blue: #3B82F6;
+  --bg-primary: #0D0719;
+  --bg-secondary: #130D22;
+  --bg-card: #1A1030;
+  --border: #2D1F4E;
+  --accent: #7C3AED;
   --accent-green: #10B981;
   --accent-yellow: #F59E0B;
   --text-primary: #F1F5F9;
@@ -29,7 +29,7 @@ body {
 }
 
 ::selection {
-  background-color: rgba(59, 130, 246, 0.3);
+  background-color: rgba(124, 58, 237, 0.3);
   color: #fff;
 }
 
@@ -45,7 +45,7 @@ body {
   border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #2D4060;
+  background: #3D1F5E;
 }
 
 @theme inline {

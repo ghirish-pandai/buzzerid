@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { allServices, getService, getServicesByPlatform } from '@/lib/services';
@@ -37,7 +37,7 @@ function getPlatformColor(platform: string) {
     marketplace: 'from-orange-900/30 to-black',
     threads: 'from-slate-800/40 to-black',
   };
-  return map[platform] ?? 'from-blue-900/30 to-black';
+  return map[platform] ?? 'from-violet-900/30 to-black';
 }
 
 function getServiceBenefits(svc: ReturnType<typeof getService>) {
@@ -109,7 +109,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
     <>
       {/* Hero */}
       <section className={`relative bg-gradient-to-b ${gradient} py-16 md:py-24`}>
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(59,130,246,0.1),transparent_60%)]" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(124,58,237,0.1),transparent_60%)]" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">
             <span className="text-2xl">{svc.platformEmoji}</span>
@@ -117,13 +117,13 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
           </div>
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-tight mb-5">
             Jasa {svc.serviceName} {svc.platformName}
-            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600 mt-1">
+            <span className="block text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-600 mt-1">
               Murah, Organik &amp; Bergaransi
             </span>
           </h1>
           <p className="text-slate-400 text-base mb-8 max-w-2xl mx-auto">
             Tingkatkan {svc.metric} {svc.platformName} Anda dengan layanan profesional dari BuzzerID.
-            Menggunakan +20.000 member aktif real human untuk hasil yang natural dan aman.
+            Menggunakan +5.000.000 member aktif real human untuk hasil yang natural dan aman.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link
@@ -136,7 +136,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
             </Link>
             <Link
               href="/ratecard"
-              className="inline-flex items-center justify-center gap-2 bg-[#131D2E] hover:bg-[#1E2D44] border border-[#1E2D44] text-white font-semibold px-8 py-3.5 rounded-xl transition-colors text-sm"
+              className="inline-flex items-center justify-center gap-2 bg-[#1A1030] hover:bg-[#2D1F4E] border border-[#2D1F4E] text-white font-semibold px-8 py-3.5 rounded-xl transition-colors text-sm"
             >
               📋 Lihat Harga
             </Link>
@@ -145,7 +145,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
       </section>
 
       {/* What is this service */}
-      <section className="py-14 bg-[#070C18]">
+      <section className="py-14 bg-[#0D0719]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white mb-5">
             Apa itu Jasa {svc.serviceName} {svc.platformName}?
@@ -154,7 +154,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
             <p>
               Jasa {svc.serviceName.toLowerCase()} {svc.platformName} adalah layanan yang membantu Anda meningkatkan{' '}
               {svc.metric} pada akun atau konten {svc.platformName} Anda secara cepat dan efektif. BuzzerID menyediakan
-              layanan ini menggunakan jaringan +20.000 member aktif real human yang tersebar di seluruh Indonesia.
+              layanan ini menggunakan jaringan +5.000.000 member aktif real human yang tersebar di seluruh Indonesia.
             </p>
             <p>
               Dengan meningkatnya {svc.metric} di {svc.platformName}, akun atau konten Anda akan terlihat lebih
@@ -172,14 +172,14 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
       </section>
 
       {/* Benefits */}
-      <section className="py-14 bg-[#0E1829]">
+      <section className="py-14 bg-[#130D22]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white mb-8 text-center">
             Manfaat Jasa {svc.serviceName} {svc.platformName}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {benefits.map((b, i) => (
-              <div key={i} className="bg-[#131D2E] border border-[#1E2D44] rounded-xl p-5 flex gap-4">
+              <div key={i} className="bg-[#1A1030] border border-[#2D1F4E] rounded-xl p-5 flex gap-4">
                 <span className="text-2xl shrink-0">{b.icon}</span>
                 <div>
                   <h3 className="text-sm font-bold text-white mb-1">{b.title}</h3>
@@ -192,7 +192,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
       </section>
 
       {/* How to order */}
-      <section className="py-14 bg-[#070C18]">
+      <section className="py-14 bg-[#0D0719]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white mb-8 text-center">
             Cara Pesan Jasa {svc.serviceName} {svc.platformName}
@@ -205,8 +205,8 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
               { n: '4', t: 'Proses & Report', d: `Tim kami memproses order dan memberikan laporan hasil ${svc.metric} yang telah dikerjakan.` },
             ].map((step) => (
               <div key={step.n} className="text-center">
-                <div className="w-12 h-12 bg-blue-900/40 border-2 border-blue-700/50 rounded-full flex items-center justify-center mx-auto mb-3">
-                  <span className="text-blue-400 font-bold">{step.n}</span>
+                <div className="w-12 h-12 bg-violet-900/40 border-2 border-violet-700/50 rounded-full flex items-center justify-center mx-auto mb-3">
+                  <span className="text-violet-400 font-bold">{step.n}</span>
                 </div>
                 <h3 className="text-sm font-semibold text-white mb-1">{step.t}</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">{step.d}</p>
@@ -227,14 +227,14 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
       </section>
 
       {/* FAQ */}
-      <section className="py-14 bg-[#0E1829]">
+      <section className="py-14 bg-[#130D22]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl font-bold text-white mb-8 text-center">
             FAQ Jasa {svc.serviceName} {svc.platformName}
           </h2>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="group bg-[#131D2E] border border-[#1E2D44] rounded-xl overflow-hidden">
+              <details key={i} className="group bg-[#1A1030] border border-[#2D1F4E] rounded-xl overflow-hidden">
                 <summary className="flex items-center justify-between p-5 cursor-pointer text-sm font-semibold text-white list-none">
                   {faq.q}
                   <svg className="w-4 h-4 text-slate-400 shrink-0 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -252,7 +252,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
 
       {/* Related services */}
       {relatedServices.length > 0 && (
-        <section className="py-14 bg-[#070C18]">
+        <section className="py-14 bg-[#0D0719]">
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 className="text-xl font-bold text-white mb-6">
               Layanan {svc.platformName} Lainnya
@@ -262,10 +262,10 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
                 <Link
                   key={`${rel.platform}-${rel.slug}`}
                   href={`/layanan/${rel.platform}/${rel.slug}`}
-                  className="bg-[#0E1829] border border-[#1E2D44] hover:border-blue-800/60 rounded-xl p-4 text-center transition-all group"
+                  className="bg-[#130D22] border border-[#2D1F4E] hover:border-violet-800/60 rounded-xl p-4 text-center transition-all group"
                 >
                   <span className="text-xl block mb-2">{rel.platformEmoji}</span>
-                  <p className="text-xs font-semibold text-white group-hover:text-blue-400 transition-colors">
+                  <p className="text-xs font-semibold text-white group-hover:text-violet-400 transition-colors">
                     Jasa {rel.serviceName}
                   </p>
                   <p className="text-xs text-slate-500 mt-0.5">{rel.platformName}</p>
@@ -277,7 +277,7 @@ export default async function ServicePage({ params }: { params: Promise<Params> 
       )}
 
       {/* CTA */}
-      <section className="py-14 bg-gradient-to-r from-blue-900/30 to-green-900/20 border-t border-[#1E2D44]">
+      <section className="py-14 bg-gradient-to-r from-violet-900/30 to-green-900/20 border-t border-[#2D1F4E]">
         <div className="max-w-2xl mx-auto px-4 text-center">
           <h2 className="text-xl font-bold text-white mb-3">
             Siap Tingkatkan {svc.metric} {svc.platformName} Anda?

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import Link from 'next/link';
 import { useState } from 'react';
 import { siteConfig, whatsappLink } from '@/lib/config';
@@ -25,19 +25,13 @@ export default function Navbar() {
   const [servicesOpen, setServicesOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-[#070C18]/95 backdrop-blur border-b border-[#1E2D44]">
+    <header className="sticky top-0 z-50 bg-[#0D0719]/95 backdrop-blur border-b border-[#2D1F4E]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
-              <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5">
-                <path d="M3.5 18.5L9.5 12.5L13.5 16.5L22 7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-                <path d="M17 7H22V12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-              </svg>
-            </div>
+          <Link href="/" className="flex items-center shrink-0">
             <span className="text-xl font-bold text-white">
-              Buzzer<span className="text-blue-400">ID</span>
+              Buzzer<span className="text-violet-400">ID</span>
             </span>
           </Link>
 
@@ -56,10 +50,10 @@ export default function Navbar() {
                 </svg>
               </button>
               {servicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[640px] bg-[#0E1829] border border-[#1E2D44] rounded-xl shadow-2xl p-4 grid grid-cols-3 gap-4">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[640px] bg-[#130D22] border border-[#2D1F4E] rounded-xl shadow-2xl p-4 grid grid-cols-3 gap-4">
                   {navServices.map((cat) => (
                     <div key={cat.platform}>
-                      <p className="text-xs font-semibold text-blue-400 uppercase tracking-wider mb-2">{cat.label}</p>
+                      <p className="text-xs font-semibold text-violet-400 uppercase tracking-wider mb-2">{cat.label}</p>
                       <ul className="space-y-1">
                         {cat.services.map((svc) => (
                           <li key={svc}>
@@ -117,7 +111,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       {menuOpen && (
-        <div className="md:hidden bg-[#0E1829] border-t border-[#1E2D44] px-4 py-4 space-y-3">
+        <div className="md:hidden bg-[#130D22] border-t border-[#2D1F4E] px-4 py-4 space-y-3">
           <Link href="/" className="block text-sm text-slate-300 hover:text-white py-2" onClick={() => setMenuOpen(false)}>Beranda</Link>
           <Link href="/ratecard" className="block text-sm text-slate-300 hover:text-white py-2" onClick={() => setMenuOpen(false)}>Rate Card</Link>
           <Link href="/blog" className="block text-sm text-slate-300 hover:text-white py-2" onClick={() => setMenuOpen(false)}>Blog</Link>

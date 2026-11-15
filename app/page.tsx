@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import { siteConfig, whatsappLink } from '@/lib/config';
 import { mainServices, blogPosts } from '@/lib/services';
 
 export const metadata: Metadata = {
-  title: { absolute: 'BuzzerID - Jasa Buzzer Indonesia +20.000 Member' },
+  title: { absolute: 'BuzzerID - Jasa Buzzer Indonesia +5.000.000 Member' },
   description: siteConfig.description,
   alternates: { canonical: siteConfig.url },
 };
@@ -27,7 +27,7 @@ const howItWorks = [
 const faqs = [
   {
     q: 'Apa itu BuzzerID?',
-    a: 'BuzzerID merupakan platform penyedia jasa buzzer terpercaya di Indonesia. Kami memiliki jaringan lebih dari 20.000 member aktif yang siap membantu meningkatkan engagement, followers, dan branding bisnis Anda di semua platform sosial media dan marketplace.',
+    a: 'BuzzerID merupakan platform penyedia jasa buzzer terpercaya di Indonesia. Kami memiliki jaringan lebih dari 5.000.000 member aktif yang siap membantu meningkatkan engagement, followers, dan branding bisnis Anda di semua platform sosial media dan marketplace.',
   },
   {
     q: 'Bagaimana cara buzzer dapat membantu campaign & branding Anda?',
@@ -51,18 +51,18 @@ export default function HomePage() {
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-[#0E1829] to-[#070C18] py-20 md:py-28">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#130D22] to-[#0D0719] py-20 md:py-28">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_left,rgba(59,130,246,0.15),transparent_60%)]" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_right,rgba(16,185,129,0.08),transparent_60%)]" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-flex items-center gap-2 bg-blue-900/40 border border-blue-800/50 text-blue-300 text-xs font-medium px-3 py-1.5 rounded-full mb-6">
+          <span className="inline-flex items-center gap-2 bg-violet-900/40 border border-violet-800/50 text-violet-300 text-xs font-medium px-3 py-1.5 rounded-full mb-6">
             <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
-            +20.000 Member Aktif Siap Bekerja
+            +5.000.000 Member Aktif Siap Bekerja
           </span>
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6">
             Jasa Buzzer Indonesia{' '}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-600">
-              +20.000 Member
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-violet-600">
+              +5.000.000 Member
             </span>
             <br />
             Bantu Branding Bisnis Anda
@@ -74,7 +74,7 @@ export default function HomePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/ratecard"
-              className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors text-sm"
+              className="inline-flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-500 text-white font-semibold px-8 py-3.5 rounded-xl transition-colors text-sm"
             >
               📋 Lihat Rate Card
             </Link>
@@ -91,8 +91,8 @@ export default function HomePage() {
           {/* Quick stats */}
           <div className="mt-16 grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
             {siteConfig.stats.map((stat) => (
-              <div key={stat.value} className="bg-[#131D2E]/80 border border-[#1E2D44] rounded-xl p-4 text-center">
-                <p className="text-xl font-bold text-blue-400">{stat.value}</p>
+              <div key={stat.value} className="bg-[#1A1030]/80 border border-[#2D1F4E] rounded-xl p-4 text-center">
+                <p className="text-xl font-bold text-violet-400">{stat.value}</p>
                 <p className="text-xs text-slate-400 mt-1 leading-tight">{stat.label}</p>
               </div>
             ))}
@@ -101,7 +101,7 @@ export default function HomePage() {
       </section>
 
       {/* PAIN POINTS */}
-      <section className="py-16 md:py-20 bg-[#070C18]">
+      <section className="py-16 md:py-20 bg-[#0D0719]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
@@ -114,7 +114,7 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
             {painPoints.map((pt, i) => (
-              <div key={i} className="flex gap-4 items-start bg-[#0E1829] border border-[#1E2D44] rounded-xl p-5">
+              <div key={i} className="flex gap-4 items-start bg-[#130D22] border border-[#2D1F4E] rounded-xl p-5">
                 <span className="text-2xl shrink-0">{pt.icon}</span>
                 <p className="text-sm text-slate-300 leading-relaxed">{pt.text}</p>
               </div>
@@ -124,12 +124,12 @@ export default function HomePage() {
       </section>
 
       {/* SERVICES */}
-      <section className="py-16 md:py-20 bg-[#0E1829]">
+      <section className="py-16 md:py-20 bg-[#130D22]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
               Manfaat Menggunakan Jasa Buzzer{' '}
-              <span className="text-blue-400">BuzzerID</span>?
+              <span className="text-violet-400">BuzzerID</span>?
             </h2>
             <p className="text-slate-400 max-w-2xl mx-auto text-sm">
               Branding sosial media dan online shop menjadi pendorong untuk menghasilkan audiens atau pelanggan yang baik.
@@ -141,10 +141,10 @@ export default function HomePage() {
               <Link
                 key={svc.id}
                 href={svc.href}
-                className="group bg-[#131D2E] border border-[#1E2D44] hover:border-blue-800/60 rounded-xl p-6 transition-all hover:bg-[#162035]"
+                className="group bg-[#1A1030] border border-[#2D1F4E] hover:border-violet-800/60 rounded-xl p-6 transition-all hover:bg-[#162035]"
               >
                 <span className="text-3xl mb-4 block">{svc.icon}</span>
-                <h3 className="text-base font-bold text-white mb-2 group-hover:text-blue-400 transition-colors">
+                <h3 className="text-base font-bold text-white mb-2 group-hover:text-violet-400 transition-colors">
                   {svc.title}
                 </h3>
                 <p className="text-sm text-slate-400 leading-relaxed">{svc.description}</p>
@@ -155,7 +155,7 @@ export default function HomePage() {
       </section>
 
       {/* BUZZER EXPLANATION */}
-      <section className="py-16 md:py-20 bg-[#070C18]">
+      <section className="py-16 md:py-20 bg-[#0D0719]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-10 text-center">
             Pengertian{' '}
@@ -165,8 +165,8 @@ export default function HomePage() {
             Sebelum melakukan order layanan, Anda perlu mengetahui apa itu buzzer &amp; jasa buzzer.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div className="bg-[#0E1829] border border-[#1E2D44] rounded-xl p-6">
-              <h3 className="text-lg font-bold text-blue-400 mb-3">Buzzer</h3>
+            <div className="bg-[#130D22] border border-[#2D1F4E] rounded-xl p-6">
+              <h3 className="text-lg font-bold text-violet-400 mb-3">Buzzer</h3>
               <p className="text-sm text-slate-400 leading-relaxed">
                 Buzzer adalah kontributor online yang bisa membantu kita untuk berbagai kebutuhan di sosial media maupun
                 marketplace atau jualan online. Seorang buzzer memiliki lebih dari 1 akun di berbagai platform sosial
@@ -174,8 +174,8 @@ export default function HomePage() {
                 share, posting, dan berbagai interaksi lainnya sesuai briefing yang diberikan.
               </p>
             </div>
-            <div className="bg-[#0E1829] border border-[#1E2D44] rounded-xl p-6">
-              <h3 className="text-lg font-bold text-blue-400 mb-3">Jasa Buzzer</h3>
+            <div className="bg-[#130D22] border border-[#2D1F4E] rounded-xl p-6">
+              <h3 className="text-lg font-bold text-violet-400 mb-3">Jasa Buzzer</h3>
               <p className="text-sm text-slate-400 leading-relaxed">
                 Jasa buzzer adalah layanan yang menyediakan segala kebutuhan campaign, marketing, personal, dan kebutuhan
                 apapun yang membutuhkan banyak dorongan dari SDM yang berhubungan dengan platform sosial media hingga
@@ -188,11 +188,11 @@ export default function HomePage() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section className="py-16 md:py-20 bg-[#0E1829]">
+      <section className="py-16 md:py-20 bg-[#130D22]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Cara Kerja Jasa Buzzer <span className="text-blue-400">BuzzerID</span>
+              Cara Kerja Jasa Buzzer <span className="text-violet-400">BuzzerID</span>
             </h2>
             <p className="text-slate-400 text-sm max-w-xl mx-auto">
               Hanya dengan beberapa langkah sederhana, Anda akan langsung bisa meningkatkan branding hingga campaign
@@ -202,11 +202,11 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-6 max-w-5xl mx-auto">
             {howItWorks.map((step, i) => (
               <div key={i} className="text-center relative">
-                <div className="w-14 h-14 bg-blue-900/40 border-2 border-blue-700/50 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <span className="text-blue-400 font-bold text-sm">{step.step}</span>
+                <div className="w-14 h-14 bg-violet-900/40 border-2 border-violet-700/50 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-violet-400 font-bold text-sm">{step.step}</span>
                 </div>
                 {i < howItWorks.length - 1 && (
-                  <div className="hidden md:block absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-blue-700/40 to-transparent" />
+                  <div className="hidden md:block absolute top-7 left-[calc(50%+28px)] right-0 h-0.5 bg-gradient-to-r from-violet-700/40 to-transparent" />
                 )}
                 <h3 className="text-sm font-semibold text-white mb-2">{step.title}</h3>
                 <p className="text-xs text-slate-400 leading-relaxed">{step.desc}</p>
@@ -227,11 +227,11 @@ export default function HomePage() {
       </section>
 
       {/* WHY BUZZERID */}
-      <section className="py-16 md:py-20 bg-[#070C18]">
+      <section className="py-16 md:py-20 bg-[#0D0719]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Mengapa Harus Jasa Buzzer dari <span className="text-blue-400">BuzzerID</span>?
+              Mengapa Harus Jasa Buzzer dari <span className="text-violet-400">BuzzerID</span>?
             </h2>
             <p className="text-slate-400 text-sm max-w-2xl mx-auto">
               Kami telah melakukan ribuan project transaksi jasa buzzer dengan ratusan client dan terus berkembang
@@ -240,8 +240,8 @@ export default function HomePage() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
             {siteConfig.stats.map((stat) => (
-              <div key={stat.value} className="bg-[#0E1829] border border-[#1E2D44] rounded-xl p-5 text-center">
-                <p className="text-2xl font-extrabold text-blue-400 mb-1">{stat.value}</p>
+              <div key={stat.value} className="bg-[#130D22] border border-[#2D1F4E] rounded-xl p-5 text-center">
+                <p className="text-2xl font-extrabold text-violet-400 mb-1">{stat.value}</p>
                 <p className="text-xs text-slate-400 leading-tight">{stat.label}</p>
               </div>
             ))}
@@ -250,7 +250,7 @@ export default function HomePage() {
       </section>
 
       {/* PRICING / RATE CARD */}
-      <section id="harga" className="py-16 md:py-20 bg-[#0E1829]">
+      <section id="harga" className="py-16 md:py-20 bg-[#130D22]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
             Detail Harga Terjangkau <span className="text-yellow-400">Jasa Buzzer</span>
@@ -258,7 +258,7 @@ export default function HomePage() {
           <p className="text-slate-400 text-sm mb-8">
             Informasi lengkap jasa buzzer bisa Anda lihat pada detail rate card di bawah ini.
           </p>
-          <div className="bg-[#131D2E] border border-[#1E2D44] rounded-2xl p-8 max-w-2xl mx-auto">
+          <div className="bg-[#1A1030] border border-[#2D1F4E] rounded-2xl p-8 max-w-2xl mx-auto">
             <div className="text-5xl mb-4">📊</div>
             <h3 className="text-lg font-bold text-white mb-2">Rate Card BuzzerID</h3>
             <p className="text-sm text-slate-400 mb-6">
@@ -268,7 +268,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-3 justify-center">
               <Link
                 href="/ratecard"
-                className="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
+                className="inline-flex items-center justify-center gap-2 bg-violet-600 hover:bg-violet-500 text-white font-semibold px-6 py-3 rounded-xl transition-colors text-sm"
               >
                 📋 Lihat Rate Card
               </Link>
@@ -286,7 +286,7 @@ export default function HomePage() {
       </section>
 
       {/* PAYMENT METHODS */}
-      <section className="py-12 bg-[#070C18]">
+      <section className="py-12 bg-[#0D0719]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-xl font-bold text-white mb-2">Metode Pembayaran Kami</h2>
           <p className="text-sm text-slate-400 mb-8">
@@ -294,7 +294,7 @@ export default function HomePage() {
           </p>
           <div className="flex flex-wrap justify-center gap-3">
             {siteConfig.paymentMethods.map((pm) => (
-              <span key={pm} className="bg-[#0E1829] border border-[#1E2D44] text-slate-300 text-sm font-medium px-4 py-2 rounded-lg">
+              <span key={pm} className="bg-[#130D22] border border-[#2D1F4E] text-slate-300 text-sm font-medium px-4 py-2 rounded-lg">
                 {pm}
               </span>
             ))}
@@ -303,11 +303,11 @@ export default function HomePage() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-16 md:py-20 bg-[#0E1829]">
+      <section id="faq" className="py-16 md:py-20 bg-[#130D22]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-10">
             <h2 className="text-2xl md:text-3xl font-bold text-white mb-3">
-              Pertanyaan Seputar Layanan <span className="text-blue-400">BuzzerID</span>
+              Pertanyaan Seputar Layanan <span className="text-violet-400">BuzzerID</span>
             </h2>
             <p className="text-slate-400 text-sm">
               Dalam upaya memberikan kemudahan kepada Anda, kami telah mengumpulkan pertanyaan dan jawaban yang sering ditanyakan.
@@ -315,7 +315,7 @@ export default function HomePage() {
           </div>
           <div className="space-y-3">
             {faqs.map((faq, i) => (
-              <details key={i} className="group bg-[#131D2E] border border-[#1E2D44] rounded-xl overflow-hidden">
+              <details key={i} className="group bg-[#1A1030] border border-[#2D1F4E] rounded-xl overflow-hidden">
                 <summary className="flex items-center justify-between p-5 cursor-pointer text-sm font-semibold text-white list-none">
                   {faq.q}
                   <svg className="w-4 h-4 text-slate-400 shrink-0 group-open:rotate-180 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -342,16 +342,16 @@ export default function HomePage() {
       </section>
 
       {/* BLOG */}
-      <section className="py-16 md:py-20 bg-[#070C18]">
+      <section className="py-16 md:py-20 bg-[#0D0719]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between mb-10">
             <div>
-              <span className="text-xs font-semibold text-blue-400 uppercase tracking-wider">Blog & Edukasi</span>
+              <span className="text-xs font-semibold text-violet-400 uppercase tracking-wider">Blog & Edukasi</span>
               <h2 className="text-2xl md:text-3xl font-bold text-white mt-1">
                 Wawasan &amp; Strategi Media Sosial Terbaru
               </h2>
             </div>
-            <Link href="/blog" className="hidden md:inline-flex text-sm text-blue-400 hover:text-blue-300 transition-colors">
+            <Link href="/blog" className="hidden md:inline-flex text-sm text-violet-400 hover:text-violet-300 transition-colors">
               Lihat Semua Artikel →
             </Link>
           </div>
@@ -360,17 +360,17 @@ export default function HomePage() {
               <Link
                 key={post.slug}
                 href={`/blog/${post.slug}`}
-                className="group bg-[#0E1829] border border-[#1E2D44] hover:border-blue-800/60 rounded-xl overflow-hidden transition-all"
+                className="group bg-[#130D22] border border-[#2D1F4E] hover:border-violet-800/60 rounded-xl overflow-hidden transition-all"
               >
-                <div className="bg-gradient-to-br from-blue-900/40 to-slate-900 h-40 flex items-center justify-center">
+                <div className="bg-gradient-to-br from-violet-900/40 to-slate-900 h-40 flex items-center justify-center">
                   <span className="text-4xl opacity-60">📝</span>
                 </div>
                 <div className="p-5">
                   <div className="flex items-center gap-2 mb-3">
-                    <span className="text-xs bg-blue-900/40 text-blue-300 px-2 py-0.5 rounded-full">{post.category}</span>
+                    <span className="text-xs bg-violet-900/40 text-violet-300 px-2 py-0.5 rounded-full">{post.category}</span>
                     <span className="text-xs text-slate-500">{post.date}</span>
                   </div>
-                  <h3 className="text-sm font-bold text-white mb-2 group-hover:text-blue-400 transition-colors leading-snug">
+                  <h3 className="text-sm font-bold text-white mb-2 group-hover:text-violet-400 transition-colors leading-snug">
                     {post.title}
                   </h3>
                   <p className="text-xs text-slate-400 leading-relaxed line-clamp-2">{post.excerpt}</p>
@@ -379,7 +379,7 @@ export default function HomePage() {
             ))}
           </div>
           <div className="text-center mt-8 md:hidden">
-            <Link href="/blog" className="text-sm text-blue-400 hover:text-blue-300">
+            <Link href="/blog" className="text-sm text-violet-400 hover:text-violet-300">
               Lihat Semua Artikel →
             </Link>
           </div>
@@ -387,7 +387,7 @@ export default function HomePage() {
       </section>
 
       {/* BOTTOM CTA */}
-      <section className="py-16 bg-gradient-to-r from-blue-900/30 to-green-900/20 border-t border-[#1E2D44]">
+      <section className="py-16 bg-gradient-to-r from-violet-900/30 to-green-900/20 border-t border-[#2D1F4E]">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
             Siap Tingkatkan Branding Bisnis Anda?

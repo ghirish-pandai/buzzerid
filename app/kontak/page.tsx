@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Link from 'next/link';
 import { siteConfig, whatsappLink } from '@/lib/config';
 
@@ -12,10 +12,10 @@ export const metadata: Metadata = {
 export default function KontakPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-[#0E1829] to-[#070C18] py-16 md:py-20">
+      <section className="bg-gradient-to-b from-[#130D22] to-[#0D0719] py-16 md:py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl font-extrabold text-white mb-4">
-            Kontak &amp; <span className="text-blue-400">Konsultasi Gratis</span>
+            Kontak &amp; <span className="text-violet-400">Konsultasi Gratis</span>
           </h1>
           <p className="text-slate-400 text-sm max-w-xl mx-auto">
             Tim profesional kami siap membantu Anda memilih layanan buzzer yang tepat untuk kebutuhan bisnis Anda.
@@ -24,13 +24,13 @@ export default function KontakPage() {
         </div>
       </section>
 
-      <section className="py-14 bg-[#070C18]">
+      <section className="py-14 bg-[#0D0719]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-2 gap-8">
           {/* Contact info */}
           <div className="space-y-5">
             <h2 className="text-xl font-bold text-white">Hubungi Kami</h2>
 
-            <div className="bg-[#0E1829] border border-[#1E2D44] rounded-xl p-5">
+            <div className="bg-[#130D22] border border-[#2D1F4E] rounded-xl p-5">
               <div className="flex items-start gap-4">
                 <div className="w-10 h-10 bg-green-900/40 rounded-lg flex items-center justify-center shrink-0">
                   <svg viewBox="0 0 24 24" fill="#10B981" className="w-5 h-5">
@@ -52,20 +52,20 @@ export default function KontakPage() {
               </div>
             </div>
 
-            <div className="bg-[#0E1829] border border-[#1E2D44] rounded-xl p-5">
+            <div className="bg-[#130D22] border border-[#2D1F4E] rounded-xl p-5">
               <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-blue-900/40 rounded-lg flex items-center justify-center shrink-0 text-lg">
+                <div className="w-10 h-10 bg-violet-900/40 rounded-lg flex items-center justify-center shrink-0 text-lg">
                   📧
                 </div>
                 <div>
                   <p className="text-sm font-semibold text-white mb-1">Email</p>
-                  <p className="text-sm text-blue-400">admin@buzzerid.com</p>
+                  <p className="text-sm text-violet-400">admin@buzzerid.com</p>
                   <p className="text-xs text-slate-500 mt-1">Untuk inquiry formal dan kerjasama</p>
                 </div>
               </div>
             </div>
 
-            <div className="bg-[#0E1829] border border-[#1E2D44] rounded-xl p-5">
+            <div className="bg-[#130D22] border border-[#2D1F4E] rounded-xl p-5">
               <p className="text-sm font-semibold text-white mb-3">Jam Operasional</p>
               <div className="space-y-1.5 text-xs text-slate-400">
                 <div className="flex justify-between"><span>Senin – Jumat</span><span className="text-green-400">08.00 – 22.00 WIB</span></div>
@@ -77,7 +77,7 @@ export default function KontakPage() {
           {/* Quick CTA */}
           <div>
             <h2 className="text-xl font-bold text-white mb-5">Mulai Konsultasi Sekarang</h2>
-            <div className="bg-[#0E1829] border border-[#1E2D44] rounded-xl p-6 space-y-4">
+            <div className="bg-[#130D22] border border-[#2D1F4E] rounded-xl p-6 space-y-4">
               <p className="text-sm text-slate-400">
                 Ceritakan kebutuhan Anda dan tim kami akan memberikan rekomendasi layanan buzzer terbaik sesuai
                 target dan budget Anda.
@@ -94,7 +94,7 @@ export default function KontakPage() {
                     href={whatsappLink(item.msg)}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-3 bg-[#131D2E] hover:bg-[#1a2540] border border-[#1E2D44] rounded-lg px-4 py-3 text-sm text-white transition-colors w-full"
+                    className="flex items-center gap-3 bg-[#1A1030] hover:bg-[#1a2540] border border-[#2D1F4E] rounded-lg px-4 py-3 text-sm text-white transition-colors w-full"
                   >
                     {item.label}
                   </Link>

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { siteConfig, whatsappLink } from '@/lib/config';
 
 const footerServices = [
@@ -22,20 +22,14 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#070C18] border-t border-[#1E2D44] mt-auto">
+    <footer className="bg-[#0D0719] border-t border-[#2D1F4E] mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           {/* Brand */}
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-blue-700 rounded-lg flex items-center justify-center">
-                <svg viewBox="0 0 24 24" fill="white" className="w-5 h-5">
-                  <path d="M3.5 18.5L9.5 12.5L13.5 16.5L22 7" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-                  <path d="M17 7H22V12" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" fill="none"/>
-                </svg>
-              </div>
+            <Link href="/" className="inline-block mb-4">
               <span className="text-xl font-bold text-white">
-                Buzzer<span className="text-blue-400">ID</span>
+                Buzzer<span className="text-violet-400">ID</span>
               </span>
             </Link>
             <p className="text-sm text-slate-400 leading-relaxed mb-4">
@@ -81,7 +75,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#1E2D44] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div className="border-t border-[#2D1F4E] pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-xs text-slate-500">
             © 2025 BuzzerID — All Rights Reserved.
           </p>
